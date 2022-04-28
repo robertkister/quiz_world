@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Contact forum , source : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_contact_form */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* button changing a color when hovering over it */
+
+input[type=submit]:hover {
+  background-color: #45a059;
+}
+
+div.container {
+  display: flex;
+  border-radius: 20px;
+  background-color:#ffffcc;
+  padding: 30px;
+}
+
+div.child{
+    flex:1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+
+.specification {
+
+text-align: center;
+background-color: #b3ffd9; 
+}
+
+@media (max-width: 800px) {
+  .specification {
+    flex-direction: column;
+  }
+}
+
+.title {
+  
+  background-color: #ffbf80;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align :center;
+ }
+
+ 
+
+</style>
+</head>
+<body>
+    <!-- navigation bar -->
+    <div class="w3-bar w3-light-grey">
+         <a href="index.html" class="w3-bar-item w3-button" >Home</a>
+            
+                <div class="w3-dropdown-hover" >
+                  <button class="w3-button" >Quizzes</button>
+                  <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="../JS/history_quiz.html" class="w3-bar-item w3-button">History</a>
+                    <a href="../JS/geography_quiz.html" class="w3-bar-item w3-button">Geography</a>
+                    <a href="../JS/science_quiz.html" class="w3-bar-item w3-button">Science</a>
+                  </div>
+                </div>
+
+            
+                <div class="w3-dropdown-hover">
+                  <button class="w3-button" >Topics</button>
+                  <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="History_article.html" class="w3-bar-item w3-button">History</a>
+                    <a href="Geography_article.html" class="w3-bar-item w3-button">Geography</a>
+                    <a href="Science_article.html" class="w3-bar-item w3-button">Science</a>
+                  </div>
+                </div>
+
+                <a href="contact_page.html" class="w3-bar-item w3-button"  >Contact</a>
+                <a href="about_page.html" class="w3-bar-item w3-button" >About</a>
+            
+            
+    </div>
+
+    <!-- the name of a webpage -->
+<h1><div class = "title">Contact page</div></h1>
+
+<!-- containers where a user can type the name -->
+<div class="container">
+  <div class"child">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for = "email" > Email </label>
+    <input type = "text" id= "email" name = "emailaddress" placeholder =" Your email address.. ">
+
+    <!-- giving options for a user to pick up a right occupation -->
+    <label for="occupation">Occupation</label>
+    <select id="occupation" name="occupation">
+      <option value="student">Student</option>
+      <option value="lecturer">Lecturer</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="subject">Inquiry</label>
+    <textarea id="subject" name="subject" placeholder="Text here.." style="height:100px"></textarea>
+
+    <input type="submit" value="Submit">
+  </div>
+  <div class"child">
+    
+             <div class="w3-container"> 
+                <div class = "specification"> 
+                 <h2>Contact me!!!</h2> <!-- a container asking to a user to contact me -->
+                  <p>Don't hesite and contact me if you have any questions or remarks.Please, fill out the form 
+                  and submit. I would me happy to answer ASAP.</p>
+                  <hr>
+                </div>
+            </div> <!-- a contact image -->
+            <div class="w3-container"> 
+                <div class ="resposnsive">
+                 <img src="../IMAGES/contact.jpg" alt="contact" width="800" height="auto">
+                  <hr>
+                </div>
+            </div>
+    
+    
+</div>
+
+
+</body>
+</html>

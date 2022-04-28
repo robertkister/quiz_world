@@ -1,0 +1,54 @@
+﻿body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+
+
+
+
+.w3-dropdown-hover button {
+	width:25 %;
+}
+
+.header {
+      background-color: b3f0ff;
+      text-align:center;
+      padding-bottom: 10px;
+
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 3px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 33.3%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* allocation of cointainers as images in the grid */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size:20px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background: url("../IMAGES/plant.jpg") no-repeat center center / cover;
+  font-weight: bold;
+  color :#ffff00;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background: url("../IMAGES/organ.jpg") no-repeat center center / cover;
+  font-weight: bold;
+  color :#ffff00;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right-below {
+  background: url("../IMAGES/atom.jpg") no-repeat center center / cover;
+  font-weight: bold;
+  color :#ffff00;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-left-below {
+  background: url("../IMAGES/t-rex.jpg") no-repeat center center / cover;
+  font-weight: bold;
+  color :#ffff00;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-last {
+  background: url("../IMAGES/universe.jpg") no-repeat center center / cover;
+  font-weight: bold;
+  color :#ffff00;
+  padding: 10px;
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left,.flex-item-left-below,.flex-item-right-below, .flext-item-last{
+    flex: 100%;
+  }
+}
+
+
+ .title {
+     
+  
+  background-color: #bf80ff;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align :center;
+  font-size: 20 px;
+  
+   }
+
+</style>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel ="stylesheet" href ="/CSS/style_topics.css">
+
+</head>
+<body>
+
+ <div class="w3-bar w3-light-grey">
+            
+              <a href="index.html" class="w3-bar-item w3-button" >Home</a>
+            
+                <div class="w3-dropdown-hover" >
+                  <button class="w3-button" >Quizzes</button>
+                  <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="../JS/history_quiz.html" class="w3-bar-item w3-button">History</a>
+                    <a href="../JS/geography_quiz.html" class="w3-bar-item w3-button">Geography</a>
+                    <a href="../JS/science_quiz.html" class="w3-bar-item w3-button">Science</a>
+                  </div>
+                </div>
+
+            
+                <div class="w3-dropdown-hover">
+                  <button class="w3-button" >Topics</button>
+                  <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="History_article.html" class="w3-bar-item w3-button">History</a>
+                    <a href="Geography_article.html" class="w3-bar-item w3-button">Geography</a>
+                    <a href="Science_article.html" class="w3-bar-item w3-button">Science</a>
+                  </div>
+                </div>
+
+                <a href="contact_page.html" class="w3-bar-item w3-button"  >Contact</a>
+                <a href="about_page.html" class="w3-bar-item w3-button" >About</a>
+            
+
+            
+        </div>
+
+
+<h1><div class = "title">Science articles</div></h1>
+
+
+
+<div class="flex-container">
+
+<div class="flex-item-last"><p><h3><mark>The largest planet in our solar system</mark></h3>“The largest planet in our
+solar system by far is Jupiter, which beats out all the other planets in both mass and volume. Jupiter’s mass is
+more than 300 times that of Earth, and its diameter, at 140,000 km, is about 11 times Earth’s diameter.
+(Jupiter's Great Red Spot, even at its current diminished size, spans 15,900, just over a full Earth diameter.) 
+Jupiter is 2½ times more massive than the rest of the planets in the solar system combined. Despite its bulk, though,
+Jupiter has a fast rotation period of just 10 hours!” (TEMMING, 2014) </p></div>
+
+
+
+ 
+
+
+
+
+
+  <div class="flex-item-left"><p><h3><mark>Fastest growing plant</mark></h3>
+“The world record for the fastest growing plant belongs to certain species of the 45 genera of bamboo, which have been
+found to grow at up to 91 cm (35 in) per day or at a rate of 0.00003 km/h (0.00002 mph).According to the RHS Dictionary 
+of Gardening, there are approximately 1,000 species of bamboos. The tallest recorded in the tropics was reportedly 
+40 m (130 ft), in Europe and the USA 20-30 m (65-98 ft) has been the tallest.” (guinnessworldrecords, 2022)</p></div>
+
+<div class="flex-item-right-below"> <p><h3><mark>Electron pairs between atoms</h3></mark>
+“When a metal element reacts with a non-metal element an ionic compound is formed. When a non-metal element reacts with
+a non-metal element a covalent bond is formed. An understanding of the way the elements are bonded allows us to explain
+their typical properties. A covalent bond forms when two non-metal atoms share a pair of electrons. The electrons involved
+are in the outer shells of the atoms. An atom that shares one or more of its electrons will complete its outer shell.
+Covalent bonds are strong – a lot of energy is needed to break them. Substances with covalent bonds often form molecules
+with low melting and boiling points, such as hydrogen and water. These substances have strong covalent bonds within 
+the molecules (between the atoms), but weak intermolecular forces between the molecules. This means that only a small
+amount of heat energy is required to separate the molecules from each other.” (bbc, 2022)
+</p></div>
+
+<div class="flex-item-right"><p><h3><mark>The largest human organ</h3></mark>
+What’s the largest organ?
+“To date, the skin is considered to be the largest organ. It covers your whole body and makes up about 16 percent 
+Trusted Source of your overall body mass. Your skin is approximately 2 millimetres thick.The function of your skin is to:<br>
+• protect your body from environmental stressors like germs, pollution, radiation from the sun, and more<br>
+• regulate your body temperature<br>
+• receive sensory information<br>
+• store water, fat, and vitamin D <br>
+But, according to a 2018 articleTrusted Source, the interstitium may now be the largest organ. Their findings, which 
+classify the interstitium as an organ, suggest that it might be bigger than the skin.” (Nunez, 2020)</p></div>
+
+
+<div class="flex-item-left-below"><p><h3><mark>T-rex</h3></mark>
+“The closest living relatives of Tyrannosaurus rex are birds such as chickens and ostriches, according to research published
+today in Science (and promptly reported in the New York Times). Palaeontologists used material discovered in a chance find 
+in 2003 to pin down the link.The dinosaur-ness of birds has been suspected for many years based on anatomical similarities, 
+but the new research is the first molecular evidence. For decades, dinosaurs were thought to be reptiles: big ones, to be sure,
+but basically cold-blooded, slow-moving, and dim-witted. The movie Jurassic Park popularized the idea of dinosaurs as quick, 
+smart and birdlike. (The movie's ideas had been proposed in the 1970s--a book by palaeontologist Robert Bakker,called 
+The Dinosaur Heresies, nicely conveys this change in thinking and the controversy that accompanied it.)To get molecular evidence 
+about dinosaurs, you need some actual molecules--a tall order for a group of animals that died out 65 million years ago. But
+in 2003, scientists Jack Horner and Mary Schweitzer discovered some unfossilised material inside a T. rex bone by a combination
+of luck, desperation, and sharp eyes (see Smithsonian, May 2006). Faced with flying a giant femur out of a remote Montana field 
+site, they broke the bone in half so it would fit inside their helicopter. If they'd had a larger helicopter, we might never
+have known.Unlike in Jurassic Park, the real-life researchers couldn't recover any DNA from the ancient remains. But they did
+retrieve molecules of collagen, a structural protein that appears in slightly different forms in many animals. They compared 
+the dinosaur version with 21 living animals, including humans, chimps, mice, chickens, ostriches, alligators and salmon.
+T. rex's collagen proved to be most similar to chickens and ostriches; its next closest match was to alligators.Chickens and 
+ostriches are only distantly related to each other, so the research says little about what kind of birds might be the closest
+relatives of the famous carnivore. The scientists noted that answering that question would require data from more molecules 
+than just collagen. Whether they are currently cracking into any more giant fossils in search of material was not 
+divulged.” (Powell, 2008)</p></div>
+
+</div>
+</body>
+</html>

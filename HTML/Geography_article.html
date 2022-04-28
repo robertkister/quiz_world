@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+/* allocation of cointainers as images in the grid */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size:20px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background: url("../IMAGES/volcano.jpg") no-repeat center center / cover;
+  font-weight: bold;
+  color: #33ff33;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background: url("../IMAGES/australia.jpg") no-repeat center center / cover;
+  font-weight: bold;
+  color: #ffcc00;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right-below {
+  background: url("../IMAGES/cold.jpg") no-repeat center center / cover;
+  font-weight: bold;
+  color: #fff0e6;  
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-left-below {
+  background: url("../IMAGES/canyon.jpg") no-repeat center center / cover;
+  font-weight: bold;
+  color: #ffff00;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-last {
+  background: url("../IMAGES/island.jpg") no-repeat center center / cover;
+  font-weight: bold;
+  color :#0000ff;
+  padding: 15px;
+  flex: 50%;
+  
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left,.flex-item-left-below,.flex-item-right-below, .flext-item-last{
+    flex: 100%;
+  }
+ }
+
+ .title {
+ 
+  background-color: #b3ffe6;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align :center;
+ }
+
+</style>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel ="stylesheet" href ="/CSS/style_topics.css" >
+</head>
+<body>
+ 
+        <div class="w3-bar w3-light-grey">
+              <a href="index.html" class="w3-bar-item w3-button" >Home</a>
+            
+                <div class="w3-dropdown-hover" >
+                  <button class="w3-button" >Quizzes</button>
+                  <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="../JS/history_quiz.html" class="w3-bar-item w3-button">History</a>
+                    <a href="../JS/geography_quiz.html" class="w3-bar-item w3-button">Geography</a>
+                    <a href="../JS/science_quiz.html" class="w3-bar-item w3-button">Science</a>
+                  </div>
+                </div>
+
+            
+                <div class="w3-dropdown-hover">
+                  <button class="w3-button" >Topics</button>
+                  <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="History_article.html" class="w3-bar-item w3-button">History</a>
+                    <a href="Geography_article.html" class="w3-bar-item w3-button">Geography</a>
+                    <a href="Science_article.html" class="w3-bar-item w3-button">Science</a>
+                  </div>
+                </div>
+
+                <a href="contact_page.html" class="w3-bar-item w3-button"  >Contact</a>
+                <a href="about_page.html" class="w3-bar-item w3-button" >About</a>
+            
+
+
+            
+        </div>
+
+<h1><div class = "title">Geography articles</div></h1>
+
+
+
+
+
+<div class="flex-container">
+
+<div class="flex-item-last">
+<p><h3><mark>The largest island</mark></h3>“Greenland is officially the world’s largest island 
+that is not a continent. Home to 56,000 people, Greenland has its own extensive local government, but it is also part of
+the Realm of Denmark.Despite the distance between Greenland and Denmark - about 3532 km between their capitals - Greenland 
+has been associated with Denmark politically and culturally for a millennium. Greenland was a Danish colony until 1953, when 
+it was redefined as a district of Denmark. In addition to its own local government, Greenland has two representatives in the 
+Danish Parliament, the Folketing.” (denmark.dk, n.d.) </p></div>
+
+
+
+ <div class="flex-item-right">
+ <p><h3><mark>Australia in December</h3></mark>
+“Surprisingly, December is the first month of the summer season in Australia. The weather is warm, pleasant and 
+comfortable for travellers to explore the whole countryside without hassles. The temperature is above 20°C in most
+of the popular cities in Australia. Adelaide, Melbourne and Sydney, all of them experience more than 26°C. However,
+in the evenings the temperature comes down and provides a more soothing atmosphere all around. When you are travelling
+to Northern Parts of the country to destinations like Cairns, Darwin, and various other out backs, the temperature
+seems to rise even more. It is more likely to be around 30°C to 32°C for most parts of the region, making it very
+hot and sultry.” (Dhaarna, n.d.)</p></div>
+
+<div class="flex-item-right-below">
+<p><h3><mark>The coldest place on Earth</h3></mark>We all know the type. Certain 
+people treat every conversation about bad or extreme weather like it's some kind of 
+contest. Maybe their hometown is snowier than yours. Maybe they've lived through more blizzards. In any case, these
+charming folks can't resist a little meteorological one-upmanship.This got us thinking about superlatives. How cold
+can the surface of our planet physically get? And what's the coldest place on Earth? To find answers to these questions,
+we got in touch with two scientists who've studied that very topic. July 21, 1983 was a day for the record books.
+One of the most remote facilities in all of Antarctica is a place called Vostok station. Run by the Russian government — and
+previously, the USSR — it's located on the East Antarctic Ice Sheet, just 800 miles (1,300 kilometers) away from the 
+geographic South Pole. On that historic date in 1983, researchers working at the station measured the lowest near surface
+air temperature that's ever been recorded: -128.56 degrees Fahrenheit (or -89.2 degrees Celsius).” (Mancini, 2021)
+</p></div>
+
+
+
+
+  <div class="flex-item-left"><p><h3><mark>Volcanoes</mark></h3>
+“Volcanoes are found mostly where tectonic plates converge or diverge. The Mid-Atlantic Ridge is a point of
+divergent tectonic plates and contains numerous volcanoes. The Pacific Ring of Fire is a region of convergent
+tectonic plates and also has numerous volcanoes. Volcanoes also could be formed in regions where there is a 
+thinning or stretching of the plates on the crust, for instance, the East African Rift and North America’s Rio
+Grande Rift. The United States has more volcanoes than any other country on Earth, followed by Russia and
+Indonesia.The US has the largest number of volcanoes totalling 173, and most of (Sawe, 2019)them are found in
+Alaska, where eruptions take place almost every year. Other volcanoes are found in Hawaii and Kilauea is the 
+most active volcano in the world that has erupted continuously since 1983. The US has about 161 active volcanoes.
+Most of them are on the western side of the country. Eighteen volcanoes are categorized as a very high threat 
+because of the internal activity and the proximity of large populations. Five out of the 18 volcanoes are found
+in Alaska. Kilauea volcanic mountain in Hawaii is considered the most dangerous volcano in the whole country.”</p></div>
+
+<div class="flex-item-left-below"><p><h3><mark>Grand Canyon</h3></mark>
+“The Grand Canyon (Hopi: Öngtupqa,Yavapai: Wi:kaʼi:la, Navajo: Bidááʼ Haʼaztʼiʼ Tsékooh,Southern Paiute language: 
+Paxa’uipi, Spanish: Gran Cañón) is a steep-sided canyon carved by the Colorado River in Arizona, United States.
+The Grand Canyon is 277 miles (446 km) long, up to 18 miles (29 km) wide and attains a depth of over a mile 
+(6,093 feet or 1,857 meters).The canyon and adjacent rim are contained within Grand Canyon National Park, the Kaibab 
+National Forest, Grand Canyon–Parashant National Monument, the Hualapai Indian Reservation, the Havasupai Indian Reservation
+and the Navajo Nation. President Theodore Roosevelt was a major proponent of the preservation of the Grand Canyon area and 
+visited it on numerous occasions to hunt and enjoy the scenery.Nearly two billion years of Earth's geological history have 
+been exposed as the Colorado River and its tributaries cut their channels through layer after layer of rock while the Colorado
+Plateau was uplifted. While some aspects about the history of incision of the canyon are debated by geologists, several recent
+studies support the hypothesis that the Colorado River established its course through the area about 5 to 6 million years ago.
+Since that time, the Colorado River has driven the down-cutting of the tributaries and retreat of the cliffs, simultaneously 
+deepening and widening the canyon.For thousands of years, the area has been continuously inhabited by Native Americans,
+who built settlements within the canyon and its many caves. The Pueblo people considered the Grand Canyon a holy site, and 
+made pilgrimages to it. The first European known to have viewed the Grand Canyon was García López de Cárdenas from Spain, 
+who arrived in 1540.[“ (https://en.wikipedia.org/wiki/Grand_Canyon, 2022)</p></div>
+
+</div>
+</body>
+</html>

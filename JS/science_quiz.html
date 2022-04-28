@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>QUIZ WORLD - SCIENCE </title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.title {
+  
+  background-color: #bf80ff;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align :center;
+ }
+ .questions {
+	 padding-left: 80px;
+	 padding-right:70px;
+
+ }
+
+ div.background {
+  background: url(../IMAGES/science-quiz.jpg);
+  border: 2px solid black;
+}
+
+div.transbox {
+  
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+div.transbox {
+  margin: 33%;
+  margin-top: 20px;
+  margin-bottom:20px;
+  font-weight: bold;
+  color: #000000;
+}
+#message {
+  background-color: #ff6666;
+  padding: 50px;
+  margin: 10px;
+  text-align:center;
+  font-size: large;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<div class="w3-bar w3-light-grey"> <!-- navigation bar -->
+                <a href="../HTML/index.html" class="w3-bar-item w3-button" >Home</a>
+            
+                <div class="w3-dropdown-hover" >
+                  <button class="w3-button" >Quizzes</button>
+                  <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="history_quiz.html" class="w3-bar-item w3-button">History</a>
+                    <a href="geography_quiz.html" class="w3-bar-item w3-button">Geography</a>
+                    <a href="science_quiz.html" class="w3-bar-item w3-button">Science</a>
+                  </div>
+                </div>
+
+            
+                <div class="w3-dropdown-hover">
+                  <button class="w3-button" >Topics</button>
+                  <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="../HTML/History_article.html" class="w3-bar-item w3-button">History</a>
+                    <a href="../HTML/Geography_article.html" class="w3-bar-item w3-button">Geography</a>
+                    <a href="../HTML/Science_article.html" class="w3-bar-item w3-button">Science</a>
+                  </div>
+                </div>
+
+                <a href="../HTML/contact_page.html" class="w3-bar-item w3-button"  >Contact</a>
+                <a href="../HTML/about_page.html" class="w3-bar-item w3-button" >About</a>
+            
+
+            
+    </div>
+
+
+<h1><div class = "title">QUIZ WORLD - SCIENCE</div></h1>
+
+	<div class="background"> <!-- a background image -->
+		  <div class="transbox"> <!-- a container for storing the questions on pictures -->
+			<div class = "questions">
+
+				<!-- radio type input that gives a user set of answers to choose from -->
+				<b>1.What is the largest planet in the solar system?<br>
+				<input type="radio" name="q1" >Neptune <br>
+				<input type="radio" name="q1">Saturn <br>
+				<input type="radio" name="q1"id="right1">Jupiter<br>
+				<br>
+
+				2.What is the largest organ of the human body?<br>
+				<input type="radio" name="q2" >Brain <br>
+				<input type="radio" name="q2">Liver <br>
+				<input type="radio" name="q2"id="right2" >Skin <br>
+				<br>
+
+				3.Electron pairs, when shared between two atoms, help create what kind of bond?<br>
+				<input type="radio" name="q3" id="right3">A covalent bond <br>
+				<input type="radio" name="q3">An ionic bond <br>
+				<input type="radio" name="q3">A metallic bond <br>
+				<br>
+
+				4.The world’s fastest-growing plant is a species of what?<br>
+				<input type="radio" name="q4" >Corn <br>
+				<input type="radio" name="q4"id="right4">Bamboo<br>
+				<input type="radio" name="q4">Weed <br>
+				<br>
+
+				5.What animal is the closest living relative to the T-rex?<br>
+				<input type="radio" name="q5"id="right5" >Chicken <br>
+				<input type="radio" name="q5">Crocodile<br>
+				<input type="radio" name="q5" >Kangaroo <br>
+				<br></b>
+
+
+				<input type="submit" name="submit" value="SUBMIT" onClick="outcome()"> <!-- submit button -->
+				<button onClick="window.location.reload();">REFRESH</button> <!-- refresh button -->
+			</div>
+		  </div>
+	</div>
+
+<p id = "message"></p> <!-- output of the JS scipt code -->
+
+<script type="text/javascript"> /* source :https://github.com/kevin578/javascript-quiz/blob/master/main.js
+https://www.youtube.com/watch?v=rCVqQ8NKU2M&t=110s */
+
+function outcome()
+{	/* if statement counting all correct answers together */
+	var score=0;
+	if(document.getElementById('right1').checked)
+		{	score++;
+		}
+	if(document.getElementById('right2').checked)
+		{	score++;
+		}
+	if(document.getElementById('right3').checked)
+		{	score++;
+		}
+	if(document.getElementById('right4').checked)
+		{	score++;
+		}
+	if(document.getElementById('right5').checked)
+		{	score++;
+		}
+
+	/* if a user has below 3 points they get message advicing them to revise */
+
+	if (score <= 2){
+		document.getElementById("message").innerHTML = "You achieved " + score + " points. You should revise the history articles.";
+	}
+		
+	
+	/* if a user has 3 and more points they get a congratualing message */
+	if (score > 2){
+		document.getElementById("message").innerHTML = "You got " + score + " points. Well done!";
+		
+	}
+	
+}
+</script>
+
+
+
+
+</div>
+
+</body>
+</html>
